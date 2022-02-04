@@ -1,0 +1,19 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int v1 = 20;
+            int v2 = 30;
+            int v3= v1+v2;
+            Console.WriteLine("addition of two num :- "+v3);
+            Console.ReadLine();
+        }
+    }
+}
