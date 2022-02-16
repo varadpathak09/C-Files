@@ -1,0 +1,34 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Practical2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int a, b,result;
+            Console.WriteLine("Enter the Number");
+            a = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter the Number");
+            b = Convert.ToInt32(Console.ReadLine());
+            result = a + b;
+            Console.WriteLine("The Addition of Two Numbers is "+result);
+            result = a - b;
+            Console.WriteLine("The Substraction of Two Numbers is "+result);
+            result = a * b;
+            Console.WriteLine("The Multiplication of Two Numbers is "+result);
+            result = a / b;
+            Console.WriteLine("The Dividation  of Two Numbers is "+result);
+            result = a % b;
+            Console.WriteLine("The Modulus of Two Numbers is "+result);
+
+            Console.ReadLine();
+
+        }
+    }
+}
