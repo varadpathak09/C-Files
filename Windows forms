@@ -1,0 +1,49 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+// Varad
+namespace WindowsFormsApplication1
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void cmbbox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbbox1.SelectedItem == "India")
+            {
+
+                states.Items.Add("maharashtra");
+                states.Items.Add("gujarat");
+                states.Items.Add("goa");
+
+
+            }
+            else
+            {
+                states.Items.Clear();
+            }
+
+        }
+
+        private void states_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            states.Items.Clear();
+        }
+    }
+}
+
+
