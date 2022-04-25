@@ -1,0 +1,26 @@
+//program to demonstrate while loop in c#.net show series of given number.
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication16
+{
+publicclassProgram
+    {
+publicstaticvoid Main()
+       {
+	int i=1,n;
+Console.WriteLine("Enter a number:-");
+         n=Convert.ToInt32(Console.ReadLine());
+		Console.WriteLine("seris of 1 to 10 in for loop:-");
+		while(i<=n)
+		  {
+			Console.WriteLine(i);
+			i++;
+		  }
+		Console.ReadLine();
+       }
+    }
+
+}
