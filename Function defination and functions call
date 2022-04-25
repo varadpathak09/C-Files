@@ -1,0 +1,25 @@
+//Program to demonstrate function definition and function call in c#.net.
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication13
+{
+publicclassProgram
+    {  
+void print()
+	 {
+	Console.WriteLine("varad");
+	 }
+publicstaticvoid Main()
+      {
+	Program p=newProgram();
+        p.print();
+Console.ReadLine();
+      }
+
+    }
+
+}
