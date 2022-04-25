@@ -1,0 +1,26 @@
+// Program To demonstrate simple inheritance in c#.net.
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication9
+{
+publicclassProgram
+    {
+public	int rollno=64;
+publicstring	name="varad";
+    }
+classexam:Program
+    {
+publicstaticvoid Main()
+
+      {
+	exam n=newexam();
+Console.WriteLine(n.rollno);
+Console.WriteLine( n.name);
+	Console.ReadLine();
+
+      }     
+    }
+}
