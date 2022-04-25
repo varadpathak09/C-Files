@@ -1,0 +1,41 @@
+//program to demonstrate multiple inheritance.
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication10
+{
+
+classstudent
+          {
+publicvoid info()
+            {
+String  name = "varad";
+String Class = "SYBCA";
+Console.WriteLine("student name :-" +name);
+Console.WriteLine("Class :-" + Class);
+             }
+         }
+interfaceexam
+        {
+void mak();
+        }
+classresult:student,exam
+       {
+publicvoid mak()
+        {
+String subject = "c#.net";
+int marks = 19;
+Console.WriteLine("subject:-" + subject);
+Console.WriteLine("marks :-" + marks);
+        }
+staticvoid Main(string[] args)
+       {
+result obj = newresult();
+        obj.info();
+        obj.mak();
+Console.ReadLine();
+       }
+    }
+}
