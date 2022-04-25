@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+
+namespace WindowsFormsApplication1
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void cmbselect_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lb1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            lb1.Items.Clear();
+            if (cmbselect.SelectedItem == "india")
+            {
+                lb1.Items.Add("maharashtra");
+                lb1.Items.Add("gujrat");
+                lb1.Items.Add("up");
+            }
+            if (cmbselect.SelectedItem == "usa")
+            {
+                lb1.Items.Add("A");
+                lb1.Items.Add("B");
+lb1.Items.Add("C");
+
+
+            }
+        }
+    }
+}
+ 
