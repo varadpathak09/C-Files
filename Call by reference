@@ -1,0 +1,27 @@
+//Program to demonstrate call by reference in c#.net.
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication11
+{
+    public class Program
+    {
+        void get(ref int x)
+        {
+            x = 15;
+            Console.WriteLine(x);
+        }
+        public static void Main()
+        {
+            int x = 30;
+            Program p = new Program();
+            Console.WriteLine("before function call:-" + x);
+            p.get(ref x);
+            Console.WriteLine("after function call:-" + x);
+            Console.ReadLine();
+        }
+
+    }
+}
